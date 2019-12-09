@@ -3,6 +3,7 @@
 <head>
 	<title>One Page Tasarım</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/930e0f6c3a.js"></script>
 </head>
@@ -14,10 +15,10 @@
 			<h1><span class="primary-text">YUSUF</span> AKCESME</h1>
 		</div>
 		<div class="header-nav">
-			<a href="#">Anasayfa</a>
-			<a href="#">Hakkında</a>
-			<a href="#">Blog</a>
-			<a href="#">İletişim</a>
+			<a href="#" class="active">Anasayfa</a>
+			<a href="#about">Hakkında</a>
+			<a href="#crew">Ekibimiz</a>
+			<a href="#contact">İletişim</a>
 		</div>
 	</header>
 
@@ -26,9 +27,9 @@
 	<section id="home-image" class="home-section">
 		<div class="home-image-filter"></div>
 		<div class="home-text">
-			<h2>WELCOME HOME</h2>
-			<p>One Page Web Design By <span class="primary-text">Yusuf Akcesme</span></p>
-			<a href="#about">SEE MORE</a>
+			<h2>HOŞGELDİNİZ</h2>
+			<p>lorem ipsum dolor <span class="primary-text">Yusuf Akcesme</span></p>
+			<a href="#about">DAHA FAZLA</a>
 		</div>
 	</section>
 
@@ -37,7 +38,7 @@
 	<!-- hakkında bolumu -->
 	<section id="about" class="about-section">
 		<div class="about-info">
-			<h1>ABOUT US</h1>
+			<h1>HAKKIMIZDA</h1>
 			<hr />
 			<p>Lorem ipsum dolor sit amet ipsum sit dolor amet. Sed do eiusmod tempor incididunt ut labore et.</p>
 		</div>
@@ -46,19 +47,19 @@
 		<div class="about-cards">
 			<div class="about-card">
 				<i class="fas fa-users"></i>
-				<h2>Who We Are?</h2>
+				<h2>Biz Kimiz?</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 
 			<div class="about-card">
 				<i class="fas fa-layer-group"></i>
-				<h2>What We Do?</h2>
+				<h2>Ne Yapıyoruz?</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 
 			<div class="about-card">
 				<i class="fas fa-toolbox"></i>
-				<h2>What We Use?</h2>
+				<h2>Ne Kullanıyoruz?</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 		</div>
@@ -68,8 +69,77 @@
 	<!-- alıntı soz bolumu -->
 	<section id="quote-image" class="quote-section">
 		<div class="quote-text">
-			<h1>"BURAYA GUZEL BIR SOZ GELECEK... :)"</h1>
+			<h1>"Senin yapacağın gider benim anca hoşuma gider"</h1>
 		</div>
+	</section>
+
+	<!-- ekibimiiz bolumu -->
+	<section id="crew" class="crew-section">
+		<div class="about-info">
+			<h1>EKİBİMİZ</h1>
+			<hr />
+			<p>Lorem ipsum dolor sit amet ipsum sit dolor amet.</p>
+		</div>
+		<div class="crew-boxes">
+			<div class="crew-box">
+				<div class="profile-image">
+					<img src="images/profile-image.jpg">
+				</div>
+				<h3>Yusuf Akcesme</h3>
+				<span>Web Developer</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+			</div>
+			<div class="crew-box">
+				<div class="profile-image">
+					<img src="images/profile-image.jpg">
+				</div>
+				<h3>Şevket Şenkal</h3>
+				<span>Web Developer</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+			</div>
+			<div class="crew-box">
+				<div class="profile-image">
+					<img src="images/profile-image.jpg">
+				</div>
+				<h3>Bora Bozdoğan</h3>
+				<span>Web Developer</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="contact" class="contact-section">
+		<div class="about-info">
+			<h1>İLETİŞİM</h1>
+			<hr />
+			<p>Bizimle iletişimi geçin.</p>
+		</div>
+
+
+		<div class="contact-general">
+
+			<div class="contact-info">
+				buraya iletişim bilgileri gelecek
+			</div>
+
+
+			<div class="contact-form">
+				<form>
+					<input type="text" placeholder="Ad Soyad" name="ad">
+					<input type="mail" placeholder="E-mail" name="email">
+
+					<textarea placeholder="Mesajınız..." rows="10"></textarea>
+					<input type="submit" name="">
+				</form>
+			</div>
+
+		</div>
+
+
+
+
 	</section>
 
 
@@ -82,7 +152,5 @@
 			<i class="fab fa-twitter"></i>
 		</div>
 	</footer>
-
-
 </body>
 </html>

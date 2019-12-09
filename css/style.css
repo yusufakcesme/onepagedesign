@@ -4,10 +4,10 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Montserrat';
+	outline: none;
 }
 
 body, html {
-	outline: none;
 	height: 100%;
 	scroll-behavior: smooth;
 	background-color: #F7F8F3;
@@ -49,6 +49,7 @@ header .header-nav a:hover {
 .primary-text {
 	color: #FF6F5E;
 }
+
 
 
 
@@ -154,7 +155,7 @@ header .header-nav a:hover {
 }
 
 .about-info p {
-	color: #2C3D63;
+	color: #333;
 }
 
 .about-cards {
@@ -220,6 +221,143 @@ section.quote-section .quote-text h1 {
 	padding-bottom: 12px;
 }
 
+
+
+
+/* CREW SECTION */
+
+section.crew-section {
+	height: auto;
+}
+
+section.crew-section .crew-boxes {
+	width: 100%;
+	display: flex;
+}
+
+section.crew-section .crew-boxes .crew-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 40px 50px;
+}
+
+section.crew-section .crew-boxes .crew-box .profile-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 4px solid #FF6F5E;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section.crew-section .crew-boxes .crew-box .profile-image img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+section.crew-section .crew-boxes .crew-box h3 {
+	color: #2C3D63;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+
+section.crew-section .crew-boxes .crew-box span {
+	font-size: 14px;
+	color: #333;
+}
+
+section.crew-section .crew-boxes .crew-box p {
+	color: #555;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 15px 10px;
+}
+
+
+/* CONTACT SECTION */
+
+
+section.contact-section {
+	height: 100%;
+}
+
+section.contact-section .contact-general {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 50px;
+}
+
+section.contact-section .contact-form {
+	display: flex;
+	justify-content: center;
+}
+
+section.contact-section .contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+section.contact-section .contact-form form input {
+	width: 400px;
+	padding: 6px 14px;
+	margin: 10px;
+	border: 2px solid #FF6F5E;
+	border-radius: 10px;
+	background: none;
+	transition: 0.3s;
+	color: #2C3D63;
+}
+
+section.contact-section .contact-form form textarea {
+	width: 400px;
+	padding: 6px 14px;
+	margin: 10px;
+	border: 2px solid #FF6F5E;
+	border-radius: 10px;
+	background: none;
+	transition: 0.3s;
+	color: #2C3D63;
+}
+
+section.contact-section .contact-form form input:focus {
+	padding: 10px 14px;
+}
+
+section.contact-section .contact-form form textarea:focus {
+	padding: 10px 14px;
+}
+
+section.contact-section .contact-form form input[type=submit] {
+	width: 200px;
+	padding: 6px 14px;
+	margin: 10px;
+	border: 2px solid #FF6F5E;
+	border-radius: 10px;
+	background: #FF6F5E;
+	transition: 0.3s;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+section.contact-section .contact-form form input[type=submit]:hover {
+	background: none;
+	color: #FF6F5E;
+}
+
+
+
+
 /* FOOTER SECTION */
 
 
@@ -254,9 +392,18 @@ footer .social-buttons i:hover {
 
 /* RESPONSIVE CODES */
 
+@-ms-viewport{
+	width: device-width;
+}
+
+
 @media only screen and (max-width: 1024px) {
 	.about-cards .about-card {
 		margin: 60px 20px;
+	}
+
+	section.crew-section .crew-boxes .crew-box {
+		margin: 40px 10px;
 	}
 
 	.about-info p {
@@ -281,6 +428,11 @@ footer .social-buttons i:hover {
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	section.contact-section .contact-general {
+		flex-direction: column;
+	}
+}
 
 @media only screen and (max-width: 700px) {
 	.about-cards {
@@ -289,9 +441,22 @@ footer .social-buttons i:hover {
 		margin: 0 auto; 
 	}
 
+	section.crew-section .crew-boxes {
+		flex-direction: column;
+		height: auto;
+		width: 80%;
+		margin: 0 auto;
+
+	}
+
 	section.quote-section .quote-text h1 {
 		font-size: 22px;
 	}
+
+	section.home-section .home-text h2 {
+		font-size: 40px;
+	}
+
 
 
 }
@@ -329,4 +494,20 @@ footer .social-buttons i:hover {
 		font-size: 14px;
 	}
 
+	section.home-section .home-text h2 {
+		font-size: 32px;
+	}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+	header .header-logo h1 {
+		text-align: center;
+	}
+
+	section.home-section .home-text h2 {
+		font-size: 26px;
+		text-align: center;
+	}
 }
