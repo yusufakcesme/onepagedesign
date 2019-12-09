@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/930e0f6c3a.js"></script>
+	<script type="text/javascript" src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -14,11 +15,16 @@
 		<div class="header-logo">
 			<h1><span class="primary-text">YUSUF</span> AKCESME</h1>
 		</div>
-		<div class="header-nav">
-			<a href="#" class="active">Anasayfa</a>
-			<a href="#about">Hakkında</a>
-			<a href="#crew">Ekibimiz</a>
-			<a href="#contact">İletişim</a>
+		<div onclick="openNav()" class="hamburger-menu">
+			<i class="fa fa-bars"></i>
+		</div>	
+		<div id="header-navbar" class="header-nav">
+			<div id="nav-items">
+				<a href="#" class="active">Anasayfa</a>
+				<a href="#about">Hakkında</a>
+				<a href="#crew">Ekibimiz</a>
+				<a href="#contact">İletişim</a>
+			</div>
 		</div>
 	</header>
 
@@ -69,7 +75,7 @@
 	<!-- alıntı soz bolumu -->
 	<section id="quote-image" class="quote-section">
 		<div class="quote-text">
-			<h1>"Senin yapacağın gider benim anca hoşuma gider"</h1>
+			<h1>"Buraya Güzel Bir Söz Gelecek.."</h1>
 		</div>
 	</section>
 
@@ -121,7 +127,16 @@
 		<div class="contact-general">
 
 			<div class="contact-info">
-				buraya iletişim bilgileri gelecek
+				<div class="info-box">
+					<i class="fa fa-map-marker-alt">	</i>
+					<h2>Adres:</h2>
+					<p>bla bla sokak, bla bla caddesi..</p>
+				</div>
+				<div class="info-box">
+					<i class="fa fa-phone-square-alt">	</i>
+					<h2>Telefon:</h2>
+					<p>+00 123 456 789</p>
+				</div>		
 			</div>
 
 
@@ -152,5 +167,7 @@
 			<i class="fab fa-twitter"></i>
 		</div>
 	</footer>
+
+
 </body>
 </html>
